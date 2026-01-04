@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f7e8ff, #ffeaf1);
+  padding: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+.site-title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+  color: #2a003e;
+  animation: fadeDown 0.8s ease;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: white;
+  font-size: 16px;
+  border: 2px solid #e3c1ff;
+  transition: 0.3s;
+}
+
+select:hover {
+  border-color: #b84fff;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(150, 0, 170, 0.15);
+  animation: fadeIn 0.4s ease;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #5a007a;
+}
+
+.owner {
+  font-size: 18px;
+  color: #444;
+}
+
+.price {
+  font-size: 22px;
+  color: #c6007e;
+  margin-top: 10px;
+}
+
+.nav-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  background: #c6007e;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #94005d;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
